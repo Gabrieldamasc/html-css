@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, #011936, #465362);
+}
+
+main{
+    background-color: #E3DFFF;
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.605);
+    text-transform: capitalize;
+}
+h1{
+    color: #011936;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.331);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3DFFF;
+    margin: auto;
+    width: 600px;
+    border-radius: 5px;
+    border: 4px solid #08A045;
+}
+p, h2, a{
+    text-align: center;
+    transition: 0.25s;
+}
+
+.link{
+    text-decoration: none;
+    color: #08A045;
+}
+
+a:hover{
+    color: red;
+
+}
+
+h1#especial{
+    border: none;
+}
+
+.anim{
+    transition: 0.25s;
+    border-radius: 50px;
+}
+.anim:hover{
+    letter-spacing: 1px;
+}
