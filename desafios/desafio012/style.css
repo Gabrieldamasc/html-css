@@ -5,13 +5,20 @@
     padding: 0px;
 }
 
+:root{
+    --cor01: #C58351;
+    --cor02: #9B7659;
+    --cor03: #706053;
+    --cor04: #332B25;
+}
+
 html, body{
     min-height: 100vh;
     background-color: darkgray;
 }
 
 header{
-    background-color: black;
+    background-color: var(--cor02);
     color: white;
     text-align: center;
 }
@@ -33,7 +40,7 @@ a{
 }
 a:hover{
     background-color: rgba(255, 255, 255, 0.678);
-    color: black;
+    color: var(--cor03);
     text-decoration: underline;
     font-weight: bolder;
 }
@@ -47,11 +54,11 @@ section{
 
 section.normal{
     background-color: white;
-    color: black;
+    color: var(--cor04);
 }
 
 section.imagem{
-    background-color: rgb(43, 43, 43);
+    background-color: var(--cor02);
     color: white;
 }
 
@@ -61,7 +68,7 @@ section.imagem p{
 }
 
 footer{
-    background-color: black;
+    background-color: var(--cor02);
     color: white;
     padding: 10px;
     text-align: center;
