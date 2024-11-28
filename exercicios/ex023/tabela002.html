@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 2.5vh;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        body{
+            background-color: bisque;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        tfoot, thead{
+            background-color: gray;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: white;
+        }
+
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia de tabelas grandes
+        Table
+            Thead
+                tr, tf, th
+            Tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <Table>
+        <caption><strong>População das unidades federativas</strong></caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 40px;">População</th>
+            <th scope="col">test</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 700</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 245 676</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">12 456 899</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">12 345 212</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">12 453 848</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">1 234 456</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">12 123 543</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">1 233 432</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Distrtito Federal</td>
+                <td class="num">12 321 665</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">9 564 789</td>
+                <td>test</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+                <td>test result</td>
+            </tr>
+        </tfoot>
+    </Table>
+</body>
+</html>
