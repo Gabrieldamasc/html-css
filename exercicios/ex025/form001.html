@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        .primeiro{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .nome{
+            margin-bottom: 15px;
+            margin-left: -40px;
+        }
+
+        .enviar{
+            margin-top: 15px;
+        }
+
+        .email{
+            padding-bottom: 15px;
+        }
+        
+        input{
+            border-radius: 4px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
+        }
+
+        input#nome:hover{
+            transform: translateY(-2px);
+            transition: 0.25s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
+        }
+
+        input#login:hover{
+            transform: translateY(-2px);
+            transition: 0.25s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
+        }
+
+        input#enviar{
+            padding: 3px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
+        }
+
+        input#enviar:hover{
+            transition: 0.25s;
+            transform: translateY(-2px);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form class="primeiro">
+        <p class="nome">
+            Nome: <input type="text" name="nome" id="nome">
+        </p>
+
+        <p class="sobrenome">
+            Sobrenome: <input type="text" name="sobrenome" id="nome">
+        </p>
+
+        <p class="enviar">
+            <input type="submit" value="Enviar" id="enviar">
+        </p>
+    </form>
+
+    <form class="segundo">
+        <p class="email">
+            E-mail: <input type="email" name="email" id="login">
+        </p>
+        
+        <p class="senha">
+            Senha: <input type="password" name="senha" id="login">
+        </p>
+        <p class="enviar">
+            <input type="submit" value="Enviar" id="enviar">
+        </p>
+    </form>
+</body>
+</html>
