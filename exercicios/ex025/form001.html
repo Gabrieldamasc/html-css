@@ -20,7 +20,7 @@
             margin-bottom: 30px;
         }
 
-        .nome{
+        .inome{
             margin-bottom: 15px;
             margin-left: -40px;
         }
@@ -39,7 +39,13 @@
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
         }
 
-        input#nome:hover{
+        input#inome:hover{
+            transform: translateY(-2px);
+            transition: 0.25s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
+        }
+
+        input#isobrenome:hover{
             transform: translateY(-2px);
             transition: 0.25s;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.224);
@@ -66,13 +72,13 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form class="primeiro">
+    <form class="primeiro" autocomplete="off" action="cadastro.php" method="post">
         <p class="nome">
-            Nome: <input type="text" name="nome" id="nome">
+            <label for="inome">Nome</label>: <input type="text" name="nome" id="inome">
         </p>
 
         <p class="sobrenome">
-            Sobrenome: <input type="text" name="sobrenome" id="nome">
+            <label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome">
         </p>
 
         <p class="enviar">
