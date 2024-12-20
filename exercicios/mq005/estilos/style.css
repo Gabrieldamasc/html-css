@@ -18,10 +18,11 @@ header h1{
     padding: 10px;
     text-align: center;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
 }
 
 span#burger{
-    background-color: rgb(44, 44, 44);
+    /*background-color: rgb(44, 44, 44);*/
     display: block;
     color: white;
     text-align: center;
@@ -30,9 +31,10 @@ span#burger{
 }
 
 span#burger:hover{
-    background-color: white;
-    color: black;
+    display: block;
+    /*background-color: white;*/
     cursor: pointer;
+    transform: translate(-0.1px, -2px);
 }
 
 menu{
@@ -48,11 +50,14 @@ menu li a{
     text-decoration: none;
     color: white;
     padding: 10px;
+    margin-bottom: 4px;
+    margin-right: 2px;
     display: block;
     background-color: rgb(78, 78, 78);
     text-align: center;
-    border: 2px solid gray;
     transition: 0.30s;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
 }
 
 menu ul li a:hover{
